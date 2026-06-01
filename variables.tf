@@ -12,5 +12,5 @@ variable "environment" {
 variable "project_name" {
   description = "The project name used as prefix for the resources"
   type        = string
-  default     = "s3-replication-lab"
+  default     = "s3-replication-lab-pnguyen-3110"
 }
