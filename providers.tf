@@ -8,8 +8,11 @@ terraform {
     }
   }
 
-  backend "local" {
-    path = "terraform.tfstate"
+  backend "s3" {
+    bucket  = "s3-replication-lab-pnguyen-3110-tfstate"
+    key     = "terraform.tfstate"
+    region  = "ap-southeast-1"
+    encrypt = true
   }
 }
 
